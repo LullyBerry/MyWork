@@ -1,0 +1,46 @@
+/*							Parts Assembler
+                                  Version 2.04.080624(:
+Parts: 
+	BL\BL16.suf
+	BR\BR05.suf
+	BR\BR09.suf
+	BR\BR12.suf
+	TK\TK09.suf
+Info:
+	DisplayOffset: ( 300.000   0.000   0.000 )
+	DisplayScale: 0.125000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 )  37  60 -70 )
+	{	mov ( 1474.53 -6321.37 3894.64 ) eye deg( 60 ) }
+	{	mov ( 0 0 0 ) target }
+{	mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 1 1 1 ) obj TK09 /* "TK\TK09.suf" */
+}
+{	mov ( -400 0 500 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 2.2 2.2 2.2 ) obj BR09 /* "BR\BR09.suf" */
+}
+{	mov ( -400 0 1150 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 1 1 1 ) obj BR05 /* "BR\BR05.suf" */
+}
+{	mov ( -350 -350 350 ) rotz ( -90 ) roty ( 0 ) rotx ( -70 )
+	scal ( 1 1 1 ) obj BR12 /* "BR\BR12.suf" */
+}
+{	mov ( -350 350 350 ) rotz ( 90 ) roty ( 0 ) rotx ( 70 )
+	scal ( 1 -1 1 ) obj BR12 /* "BR\BR12.suf" */
+}
+{	mov ( 350 -850 600 ) rotz ( 180 ) roty ( -70 ) rotx ( 180 )
+	scal ( 1 1 1.1 ) obj BL16 /* "BL\BL16.suf" */
+}
+{	mov ( 350 850 600 ) rotz ( -180 ) roty ( -70 ) rotx ( -180 )
+	scal ( 1 -1 1.1 ) obj BL16 /* "BL\BL16.suf" */
+}
+}

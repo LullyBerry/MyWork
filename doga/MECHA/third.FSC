@@ -1,0 +1,35 @@
+/*							Parts Assembler
+                                  Version 2.04.080624(:
+Parts: 
+	CP\CP10.suf
+	SL\SL06.suf
+	TK\TK01.suf
+Info:
+	DisplayOffset: (   0.000   0.000   0.000 )
+	DisplayScale: 0.125000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 )  -9  70 -70 )
+	{	mov ( 1267.67 -950.756 950.756 ) eye deg( 60 ) }
+	{	mov ( 0 0 0 ) target }
+{	mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 1 1 1 ) obj TK01 /* "TK\TK01.suf" */
+}
+{	mov ( 0 -600 100 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 0.6 0.6 0.6 ) obj SL06 /* "SL\SL06.suf" */
+}
+{	mov ( 0 600 100 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 0.6 -0.6 0.6 ) obj SL06 /* "SL\SL06.suf" */
+}
+{	mov ( 0 0 300 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 1.2 1.2 1.2 ) obj CP10 /* "CP\CP10.suf" */
+}
+}

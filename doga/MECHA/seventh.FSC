@@ -1,0 +1,52 @@
+/*							Parts Assembler
+                                  Version 2.04.080624(:
+Parts: 
+	BL\BL03.suf
+	BL\BL16.suf
+	CP\CP10.suf
+	OT\OT12.suf
+	S2\S211.suf
+Info:
+	DisplayOffset: (   0.000   0.000   0.000 )
+	DisplayScale: 0.125000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -10  70 -70 )
+	{	mov ( 1200 -900 900 ) eye deg( 60 ) }
+	{	mov ( 0 0 0 ) target }
+{	mov ( 0 0 757 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 1 1 1 ) obj S211 /* "S2\S211.suf" */
+}
+{	mov ( 0 0 757 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( -1 1 1 ) obj S211 /* "S2\S211.suf" */
+}
+{	mov ( 0 0 757 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 0.6 0.6 0.6 ) obj OT12 /* "OT\OT12.suf" */
+}
+{	mov ( 300 0 757 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 1 1 1 ) obj CP10 /* "CP\CP10.suf" */
+}
+{	mov ( 0 -300 757 ) rotz ( 90 ) roty ( 0 ) rotx ( 0 )
+	scal ( -1 1 1 ) obj CP10 /* "CP\CP10.suf" */
+}
+{	mov ( -300 0 757 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( -1 1 1 ) obj CP10 /* "CP\CP10.suf" */
+}
+{	mov ( 0 300 757 ) rotz ( -90 ) roty ( 0 ) rotx ( 0 )
+	scal ( -1 -1 1 ) obj CP10 /* "CP\CP10.suf" */
+}
+{	mov ( 0 0 757 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 0.8 0.8 0.8 ) obj BL03 /* "BL\BL03.suf" */
+}
+{	mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 1 1 1 ) obj BL16 /* "BL\BL16.suf" */
+}
+}

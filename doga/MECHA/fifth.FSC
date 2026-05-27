@@ -1,0 +1,40 @@
+/*							Parts Assembler
+                                  Version 2.04.080624(:
+Parts: 
+	BG\BG03.suf
+	BL\BL02.suf
+	BL\BL11.suf
+	BL\BL12.suf
+	BL\BL15.suf
+Info:
+	DisplayOffset: ( 100.000   0.000   0.000 )
+	DisplayScale: 0.125000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -10  70 -70 )
+	{	mov ( 3073.72 -2305.29 2973.22 ) eye deg( 60 ) }
+	{	mov ( -235.74 176.805 491.125 ) target }
+{	mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 1 1 1 ) obj BL12 /* "BL\BL12.suf" */
+}
+{	mov ( 0 0 500 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 0.3 0.3 0.3 ) obj BL15 /* "BL\BL15.suf" */
+}
+{	mov ( 0 0 800 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 0.8 0.8 0.8 ) obj BL11 /* "BL\BL11.suf" */
+}
+{	mov ( 0 0 1250 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 1 1 1 ) obj BL02 /* "BL\BL02.suf" */
+}
+{	mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 1 1 1 ) obj BG03 /* "BG\BG03.suf" */
+}
+}
