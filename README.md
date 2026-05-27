@@ -51,3 +51,23 @@ Processingで作成した2Dシューティングゲームです。
 - 状態遷移の設計： 「待機」「硬貨投入」「金額達成（購入可）」「商品搬出・お釣り計算」といった自動販売機の一連の動作フローを、順序回路における状態遷移マシンとして正確に論理設計しました。
 - ハードウェア的なアプローチ： ソフトウェアでの条件分岐（if文など）ではなく、クロック同期やフリップフロップ、ゲート論理を意識したハードウェア的なリソース最適化・同期設計を意識しました。
 
+---
+
+## 🎨 4. POV-Ray による3Dグラフィックス・シーンレンダリング
+テキスト記述型のレイトレーシングソフト「POV-Ray」を使用し、3D空間における物体の幾何配置、光源処理、およびマテリアル（質感）のシミュレーションを行いました。
+
+### 📸 動作イメージ
+スクショ画像を貼り付けます。
+<img width="640" height="480" alt="add3" src="https://github.com/user-attachments/assets/32800575-1626-4d51-89e2-b71a7df4d163" />
+<img width="320" height="240" alt="tsuika2" src="https://github.com/user-attachments/assets/4d150556-dcbd-4cf1-889e-4445c3e589da" />
+<img width="320" height="240" alt="tsuika2-2" src="https://github.com/user-attachments/assets/e7922759-5f5c-4956-93c2-f59133e45b5d" />
+<img width="320" height="240" alt="tsuika2-3" src="https://github.com/user-attachments/assets/534fccb8-73c8-42d7-851c-92c37f3381aa" />
+<img width="320" height="240" alt="tsuika2-4" src="https://github.com/user-attachments/assets/cea16a10-ca36-4d2b-b4bc-46ca5481200a" />
+<img width="320" height="240" alt="tsuika2-5" src="https://github.com/user-attachments/assets/05c1ed9f-813b-45c5-9355-354fdf0cf7b2" />
+<img width="320" height="240" alt="tsuika2-6" src="https://github.com/user-attachments/assets/ee2c7010-26bd-4704-a7be-8d862cf1e791" />
+
+
+### ✨ 工夫・こだわった点
+- 数学的配置とモデリング： `cylinder` や `cone`、`prism` などの基本図形を組み合わせ、雪だるまや背景の家・木、さらには電子部品（コンデンサ）などの複雑なオブジェクトを3次元座標上で緻密にモデリングしました。
+- 光と質感（テクスチャ）の表現： 光源（`light_source`）の配置による陰影処理だけでなく、物体の表面の質感（透明感、反射、バンプマッピングによる凹凸感など）をコードで数値定義し、リアルな質感を追求しました。
+
