@@ -1,0 +1,13 @@
+|vending
+z <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+y => inst11.IN0
+y => inst6.IN0
+y => e.DATAIN
+x => inst.IN0
+x => inst3.IN0
+x => inst4.IN0
+reset => inst5.ACLR
+clock => inst5.CLK
+e <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
