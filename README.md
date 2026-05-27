@@ -58,6 +58,7 @@ Processingで作成した2Dシューティングゲームです。
 
 ### 📸 動作イメージ
 スクショ画像を貼り付けます。
+
 <img width="640" height="480" alt="add3" src="https://github.com/user-attachments/assets/32800575-1626-4d51-89e2-b71a7df4d163" />
 <img width="320" height="240" alt="tsuika2" src="https://github.com/user-attachments/assets/4d150556-dcbd-4cf1-889e-4445c3e589da" />
 <img width="320" height="240" alt="tsuika2-2" src="https://github.com/user-attachments/assets/e7922759-5f5c-4956-93c2-f59133e45b5d" />
