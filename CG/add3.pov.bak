@@ -1,0 +1,15 @@
+#include "shapes.inc"
+#include "colors.inc"   
+#include "textures.inc"
+
+camera{ 
+            location<20,20,-20>
+            right<-1.33,0,0>
+            look_at<0,0,0>         
+            angle 10   
+}                  
+light_source{  <30,25,-15>
+            color White
+}
+
+differnce

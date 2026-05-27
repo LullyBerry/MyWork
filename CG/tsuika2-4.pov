@@ -1,0 +1,22 @@
+#include "shapes.inc"
+#include "colors.inc"   
+#include "textures.inc"
+
+camera{ 
+            location<20,20,-20>
+            right<-1.33,0,0>
+            look_at<0,0,0>         
+            angle 30   
+}                  
+light_source{<30,25,-15>
+            color White
+} 
+difference{
+    object{
+    cylinder{<0,0,0>,<-5,0,0>,5 pigment{color Blue} }
+}
+    object{
+    cylinder{<5,0,0>,<-10,0,0>,4 pigment{color Blue} }
+}
+}              
+background{LightBlue}
